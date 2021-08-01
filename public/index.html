@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>TS app</title>
+</head>
+<body>
+    <header class="container-fluid bg-yellow text-white p-5">
+        <h1 class="text-center">Penny</h1>
+        <section id="navbar">
+          <ul class="nav justify-content-end text-white p-2 sticky-top">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-heart"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-sun"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-cloud-moon"></i></a>
+              </li>
+            </ul>
+      </section>
+    </header>
+   
+    <main>
+      <section id="default" class="m-5 p-5">
+        <img src="images\emptyDudes.svg" alt="empty" class="img-fluid default-img">
+      </section>
+        <ul id="myCommiments">
+            
+        </ul>
+        <section id="input" class="bg-yellow">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6 p-5" id="quote">
+                  <h1 class="text-center text-white">Quote of the day</h1>
+                  <p class="text-center text-white">" A penny saved is a penny earned</p>
+              </div>
+              <div class="p-5 text-white col-sm-12 col-lg-6">
+                <h1 class="text-center">Let's do this together !</h1>
+                  <form action="#" id="form">
+                              <div class="form-group m-3">
+                                  <label for="sel1">Select list:</label>
+                                  <select class="form-control" id="sel1">
+                                    <option value="To pay">To pay</option>
+                                    <option value="To buy">To buy</option>
+                                    <option value="To deliver">To deliver</option>
+                                  </select>
+                                </div>
+                          <input type="number" class="form-control form-control m-3" placeholder="enter amount" id="amount">
+                          <textarea type="text" class="form-control form-control m-3 text-area"
+                          placeholder="enter description" id="description"></textarea>
+                          <button class="btn btn-dark p-2  btn-block  mx-auto d-block"  type="submit">
+                            +
+                          </button>
+                        </form>
+                      </div> 
+            </div>
+            
+            </div>
+        </section>
+    </main>
+    <footer class="text-secondary bg-dark p-5 mt-5">
+        <p class="text-center">&copy; All rights reserved.<a href="#" class="text-secondary">VIEW LICENSE</a></p>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
